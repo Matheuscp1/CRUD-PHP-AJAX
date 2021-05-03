@@ -1,0 +1,56 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/monitoramento.css">
+    <title>Monitoramento de Ramais</title>
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="linha">
+            <h1>Painel de monitoramento de ramal</h1>
+        </div>
+        <form id="formulario" method="POST">
+            <label class="">Nome do usuário</label>
+            <div class="">
+                <input type="text" name="nomeUser" id="nomeUser" class="formulario" maxlength="20" required placeholder="Nome de usúario">
+            </div>
+
+            <label>Numéro</label>
+            <div>
+                <input type="text" name="numero" id="numero" class="formulario" maxlength="14" required placeholder="(00)0000-0000">
+            </div>
+
+            <label>IP</label>
+            <div>
+                <input type="text" name="ip" id="ip" class="formulario" maxlength="15" required placeholder="192.168.0.1">
+            </div>
+
+            <label>Status</label>
+            <div>
+                <select name="status" id="status" required class="formulario">
+          <option value=""></option>
+          <option value="Ocupado">Ocupado</option>
+          <option value="Chamando">Chamando</option>
+          <option value="Disponivel">Disponivel</option>
+          <option value="Indisponivel">Indisponivel</option>
+        </select>
+            </div>
+
+            <div>
+                <span id="spanSalvar"><button class='botao botao-sucesso' id='salvar'> Salvar</button></span>
+                <span id="spanEditar" hidden><button class='botao  botao-editar' id='editar'> Editar</button></span>
+            </div>
+            <input type="text" name="idUpdate" id="idUpdate" hidden>
+        </form>
+        <div class="linha">
+            <div id="cartoes">
+            </div>
+        </div>
+    </div>
+    <script src="js/monitoramento.js"></script>
+</body>
+
+</html>

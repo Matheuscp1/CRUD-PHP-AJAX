@@ -1,0 +1,18 @@
+##CONFIGURAÇÕES
+1-Fazer o backup do arquivo call_center.sql para criação do banco
+2-Em lib/Conexao-classe alterar as configurações do banco de dados
+
+##MELHORIAS
+1-Adicionado formulário de cadastro
+2-Adicionado botão de deletar 
+3-Adicionado botão de editar
+4-Todos os metódos de crud estão feito em ajax
+5-Adicionado classe de conexao com banco de dados
+6-Adicionado classe de ramais
+7-Não é efeutado carregamento da pagina para efetuar as ações
+8-Há cada 10 segundos é feito uma nova requisição para leitura do ramais
+9-Há pagina esta responsiva
+
+
+## NOTAS
+Arquivos filas e ramais apenas para referência
